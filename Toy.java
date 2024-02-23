@@ -1,9 +1,9 @@
-public class Create_toy {
+public class Toy {
     int id;
     String name;
     int lossRate;
 
-    public Create_toy(int id, String name, int lossRate){
+    public Toy(int id, String name, int lossRate){
         this.id = id;
         this.name = name;
         this.lossRate = lossRate;
@@ -16,5 +16,21 @@ public class Create_toy {
                 ", name='" + name + '\'' +
                 ", lossRate=" + lossRate +
                 '}';
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getLossRate() {
+        return lossRate;
+    }
+
+    public void setLossRate(int lossRate) {
+        this.lossRate = lossRate;
     }
 }

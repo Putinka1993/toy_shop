@@ -1,27 +1,28 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.*;
 
 public class ToyGenerator {
 
-    public Object[] GetArrayToy(){
+    public List <Toy> GetArrayToy(){
 
         String[] toysArr = {"Кукла", "Машинка", "Конструктор", "Мяч", "Кубики",
                 "Настольная игра", "Пазл", "Мягкая игрушка", "Робот", "Фигурка"};
-        int[] weights = {20, 20, 60};
 
-        Object[] Toys = new Object[10];
+//        int[] weights = {20, 40, 60};
+
+        List <Toy> toys = new ArrayList<Toy>();
 
         for (int i = 0; i < toysArr.length; i++) {
             Random rand = new Random();
-            int index = rand.nextInt(toysArr.length);  
-            int ind = rand.nextInt(weights.length);
+            int index = rand.nextInt(toysArr.length);
+            int ind = rand.nextInt(10,101);
             String name = toysArr[index];
-            Toys[i] = new Create_toy(i, name, weights[ind]);
+            toys.add(new Toy(i, name, ind));
         }
-        return Toys;
+        return toys;
     }
+
+
+
 }
 
 //    PriorityQueue<Toys> queue = new PriorityQueue<>(Comparator.comparingInt(toysArr::getWeight));
