@@ -1,0 +1,10 @@
+Create_toy{id=1, name='Пазл', lossRate=93}
+Create_toy{id=0, name='Конструктор', lossRate=33}
+Create_toy{id=3, name='Конструктор', lossRate=72}
+Create_toy{id=4, name='Машинка', lossRate=99}
+Create_toy{id=5, name='Настольная игра', lossRate=77}
+Create_toy{id=2, name='Конструктор', lossRate=33}
+Create_toy{id=6, name='Машинка', lossRate=29}
+Create_toy{id=7, name='Мяч', lossRate=66}
+Create_toy{id=8, name='Машинка', lossRate=51}
+Create_toy{id=9, name='Фигурка', lossRate=95}

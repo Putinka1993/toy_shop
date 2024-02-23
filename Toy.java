@@ -9,6 +9,7 @@ public class Toy {
         this.lossRate = lossRate;
     }
 
+
     @Override
     public String toString() {
         return "Create_toy{" +
